@@ -28,7 +28,7 @@ public class bolling : MonoBehaviour
         if (Keyboard.current.leftArrowKey.isPressed)
             MoveLeft();
     }
-    private void Shootball()
+    public void Shootball()
     {
         rb.AddForce(Vector3.forward * forcePower, ForceMode.Impulse);
     }
